@@ -1,0 +1,35 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.aboutmewelcome p {
+    font-size: 50px;
+    text-align: center;
+    color: red;
+}
+
+.aboutmecontent p {
+    font-size: 30px;
+    text-align: left;
+    color: white;
+}
+
+.backbutton button {
+    background-color: transparent;
+    color: orange;
+    border-color: orange;
+    padding: 25px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: transform 0.3s, border-color 0.3s, color 0.3s;
+    margin-left: 20%;
+    margin-top: 1%;
+    font-size: 30px;
+}
+
+.backbutton button:hover {
+    color: white;
+    transform: scale(1.1);
+    border-color: white;
+}

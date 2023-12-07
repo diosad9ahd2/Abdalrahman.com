@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    background: url("background.jpg");
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 960px;
+}
+
+.topbar {
+    position: relative;
+    background-image: url('topbar.png'); /* Replace 'your-image.jpg' with the path to your image */
+    background-size: cover; /* Adjust to cover the entire top bar */
+    background-position: center; /* Center the background image */
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 0 0 30px 30px; /* Round only the bottom corners */
+}
+
+.topbar img {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 3%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.topbar button {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border-radius: 20%;
+    outline: none;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: border-color 0.3s, transform 0.3s, color 0.3s;
+}
+
+.topbar button:hover {
+    color: orange;
+    border-color: rgb(161, 161, 161);
+    transform: scale(1.1);
+}
+
+#text-container {
+    font-family: 'Arial', sans-serif;
+    font-size: 40px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow content */
+    border-right: 2px solid #ffffff; /* Simulate the cursor */
+    display: inline-block; /* Added to make the border-bottom work */
+    color: white;
+    text-align: center;
+    margin-top: 1em; /* Initial margin, adjust as needed */
+    transition: margin-top 1s linear; /* Animation transition property */
+}
+
+#text-container.typing {
+    margin-top: 0; /* Move text up by resetting the margin */
+}
